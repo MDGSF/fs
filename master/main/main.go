@@ -1,7 +1,7 @@
 package main
 
-import "log"
+import "github.com/MDGSF/fs/master"
 
 func main() {
-	log.Println("master")
+	master.Start()
 }
