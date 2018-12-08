@@ -1,6 +1,9 @@
 package numgener
 
-import "sync"
+import (
+	"sync"
+	"sync/atomic"
+)
 
 type TNumGenerator struct {
 	sync.Mutex
@@ -12,9 +15,5 @@ func NewNumGenerator() *TNumGenerator {
 }
 
 func (g *TNumGenerator) Num() uint64 {
-	g.Lock()
-	g.i++
-	newnum := g.i
-	g.Unlock()
-	return newnum
+	return atomic.AddUint64(&g.i, 1)
 }

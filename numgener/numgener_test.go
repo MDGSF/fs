@@ -10,4 +10,7 @@ func TestNumGenerator(t *testing.T) {
 	gen := NewNumGenerator()
 	n := gen.Num()
 	assert.Equal(t, uint64(1), n, "they should be equal")
+
+	n = gen.Num()
+	assert.Equal(t, uint64(2), n, "they should be equal")
 }
