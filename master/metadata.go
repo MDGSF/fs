@@ -5,10 +5,15 @@ type TChunkServer struct {
 	Addr string //"127.0.0.1:1234"
 }
 
-type TMetaData struct {
+type TSmallFile struct {
+	ID          uint64
+	ChunkServer []string
 }
 
-var GMeta TMetaData
+type TBigFile struct {
+	ID    uint64
+	Parts []TSmallFile
+}
 
 func LoadMetaFromFile() {
 }

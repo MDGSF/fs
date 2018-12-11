@@ -23,3 +23,14 @@ https://github.com/ceph/ceph    (c++)
 
 https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Beaver.pdf
 https://github.com/chrislusf/seaweedfs    (golang)
+
+#### raft
+
+https://ramcloud.stanford.edu/~ongaro/thesis.pdf
+https://github.com/etcd-io/etcd
+
+#### Paxos
+
+https://www.zhihu.com/question/19787937
+
+
